@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: githubrepos
+github:
+  api:
+    base-url: https://api.github.com
+
+logging:
+  level:
+    com.github.repos: DEBUG

@@ -18,9 +18,13 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter")
+	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-restclient")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.springframework.boot:spring-boot-resttestclient")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	testImplementation("org.wiremock.integrations:wiremock-spring-boot:4.2.1")
+	testImplementation("org.skyscreamer:jsonassert:1.5.3")
 }
 
 tasks.withType<Test> {
